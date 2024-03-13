@@ -1,0 +1,39 @@
+<!--pages/ground/ground.wxml-->
+<view class="title">
+	<view class="title_1">
+		<image src="http://81.71.66.85:9090/i/2024/02/07/zj4kaw.png" class="title_img" mode="" />
+	</view>
+	<view>
+		<swiper class="slideshow_background" autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}">
+			<swiper-item wx:for="{{news_photo_list}}" wx:key="photo_key">
+				<image src="{{item.link}}" class="slideshow" mode="aspectFill" />
+			</swiper-item>
+		</swiper>
+	</view>
+	<view style="margin-top: 10rpx;margin-left: 50rpx;margin-right: 50rpx;">
+		<image class="line" src="http://81.71.66.85:9090/i/2024/02/08/krdofk.png" mode="" />
+	</view>
+</view>
+<view class="body">
+	<view wx:for="{{article_list}}" wx:key="key" data-artid="{{item.tweet_id}}" bindtap="art_card">
+		<view class="card">
+			<view class="card_img">
+				<image src="{{item.cover}}" class="tiny_card_img" mode="aspectFill" />
+			</view>
+			<view class="data">
+				<view class="card_title">
+					{{item.title}}
+				</view>
+				<view class="other">
+					<view id="about" class="about">
+						{{item.indirect}}
+					</view>
+					<view id="time" class="time">
+						{{item.gmtModified}}
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view style="height: 30rpx;"></view>
+</view>

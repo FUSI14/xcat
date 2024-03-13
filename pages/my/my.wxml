@@ -1,0 +1,57 @@
+<!--pages/my/my.wxml-->
+<view>
+	<view class="title">
+		<image src="http://81.71.66.85:9090/i/2024/02/06/h9rpxg.png" class="title_img" mode="" />
+	</view>
+	<!--index.wxml-->
+	<scroll-view class="scrollarea" scroll-y type="list">
+		<view>
+			<block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
+				<view class="container">
+					<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+						<image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+					</button>
+					<view class="nickname-wrapper">
+						<text class="nickname-label">昵称</text>
+						<input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
+					</view>
+					<view style="height: 100rpx;"></view>
+				</view>
+			</block>
+			<block wx:elif="{{!hasUserInfo}}">
+				<button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+				<view wx:else> 请使用2.10.4及以上版本基础库 </view>
+			</block>
+			<block wx:else>
+				<view class="my-background">
+					<view style="display: flex;justify-content: center;">
+						<image src="{{userInfo.avatarUrl}}" style="border-radius: 100%;width: 180rpx;height: 180rpx;margin-top: 80rpx;box-shadow: 5rpx 5rpx 10rpx #bbb3aa, -10rpx -10rpx 10rpx #FFFFFF;"></image>
+					</view>
+					<view style="display: flex;justify-content: center;">
+						<view class="name">{{userInfo.nickName}}</view>
+					</view>
+					<view style="display: flex;justify-content: center;">
+						<view class="indirect">用一句话介绍自己吧~</view>
+					</view>
+				</view>
+				<view class="my-sth">
+					<view class="cli message">
+					</view>
+					<view class="cli reback">
+					</view>
+					<view class="cli point">
+					</view>
+				</view>
+			</block>
+		</view>
+	</scroll-view>
+	<view style="margin-left: 50rpx;margin-right: 50rpx;">
+		<view style="color:#806f6a;font-size: 38rpx;">
+			关于我们
+		</view>
+		
+	</view>
+	<view style="margin-top: 40rpx;">
+			<image src="http://81.71.66.85:9090/i/2024/03/08/4vhhs.png" mode="" style="width: 100%;"/>
+	</view>
+</view>

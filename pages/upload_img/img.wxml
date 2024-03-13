@@ -1,0 +1,5 @@
+<!--pages/upload_img/img.wxml-->
+<text>pages/upload_img/img.wxml</text>
+<button bindtap="chooseImage">
+111
+</button>

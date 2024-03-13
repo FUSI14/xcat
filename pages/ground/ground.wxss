@@ -1,0 +1,113 @@
+/* pages/ground/ground.wxss */
+.body {
+	margin-left: 50rpx;
+	margin-right: 50rpx;
+	margin-top: 600rpx;
+}
+
+/*大标题*/
+.title_1 {
+	display: flex;
+	justify-content: center;
+	padding-top: 100rpx;
+}
+
+.title {
+	background-color: #f0f0f0;
+	height: 590rpx;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+.title_img {
+	height: 45rpx;
+	width: 196rpx;
+}
+
+/*轮播图背景*/
+.slideshow_background {
+	margin-top: 40rpx;
+	margin-left: 50rpx;
+	margin-right: 50rpx;
+	height: 340rpx;
+	background-color: #f0f0f0;
+	box-shadow: 13rpx 13rpx 20rpx #b1a9a0, -10rpx -10rpx 15rpx #FFFFFF;
+	border-radius: 30rpx;
+}
+
+.slideshow {
+	height: 340rpx;
+	width: 100%;
+	border-radius: 30rpx;
+}
+
+/*浅色分割线*/
+.line {
+	width: 100%;
+	height: 6rpx;
+}
+
+/*文章小卡片*/
+.card {
+	height: 200rpx;
+	width: 100%;
+	box-shadow: 13rpx 13rpx 20rpx #e0d8cf, -10rpx -10rpx 20rpx #FFFFFF;
+	background-color: #f0f0f0;
+	border-radius: 30rpx;
+	margin-bottom: 35rpx;
+}
+
+.card_img {
+	height: 150rpx;
+	width: 150rpx;
+	border-radius: 30rpx;
+	box-shadow: -10rpx -10rpx 20rpx #e0d8cf, 10rpx 10rpx 20rpx #FFFFFF;
+	margin-top: 25rpx;
+	margin-left: 25rpx;
+}
+
+.tiny_card_img {
+	height: 150rpx;
+	width: 150rpx;
+	border-radius: 30rpx;
+}
+
+.card_img,
+.data {
+	float: left;
+}
+
+/*卡片数据内容*/
+.data {
+	margin-top: 19rpx;
+	margin-left: 30rpx;
+}
+
+.card_title {
+	color: #806f6a;
+	font-size: 37rpx;
+	width: 400rpx;
+	/*超出部分隐藏*/
+	overflow: hidden;
+	/*不换行*/
+	white-space: nowrap;
+	/*添加...*/
+	text-overflow: ellipsis;
+}
+
+.about {
+	margin-top: 22rpx;
+	font-size: 27rpx;
+	width: 400rpx;
+	color: #b58e8a;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.time {
+	font-size: 22rpx;
+	color: #cfba99;
+}

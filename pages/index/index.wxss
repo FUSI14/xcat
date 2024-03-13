@@ -1,0 +1,94 @@
+/**index.wxss**/
+/*大标题*/
+.title_1{
+	display: flex;
+	justify-content: center;
+	padding-top: 100rpx;
+}
+/*区域状态选择*/
+.title_2{
+	margin: 40rpx;
+}
+
+.body{
+	margin: 40rpx;
+	margin-top: 280rpx;
+}
+
+.zone{
+	float: left;
+}
+.zone_img{
+	width: 100rpx;
+	height: 60rpx;
+}
+.state{
+	float: left;
+}
+.state_img{
+	width: 100rpx;
+	height: 60rpx;
+}
+.title{
+	background-color: #f0f0f0;
+	height: 330rpx;
+	width: 100%;
+	position:fixed; 
+	top:0;
+}
+.title_img{
+	width: 196rpx;
+	height: 45rpx;
+}
+.cat_small{
+	height: 200rpx;
+	width: 100%;
+	background-color: #f0f0f0;
+	box-shadow: 10rpx 10rpx 15rpx #dbd1c6,-10rpx -10rpx 15rpx #FFFFFF;
+	border-radius: 30rpx;
+	margin-bottom: 40rpx;
+}
+.cat_small .photo,.cat_small .data{
+	float: left;
+}
+.cat_small .photo{
+	height: 140rpx;
+	width: 140rpx;
+	margin-top: 30rpx;
+	margin-left: 30rpx;
+	border-radius: 30rpx;
+	box-shadow: 8rpx 8rpx 10rpx #ffffff,-5rpx -5rpx 10rpx #837b7b;
+}
+.photo_img{
+	height: 140rpx;
+	width: 140rpx;
+	border-radius: 30rpx;
+}
+
+.cat_small{
+	margin-top: 30rpx;
+}
+
+.tiny_zone{
+	width: 165rpx;
+	height: 60rpx;
+}
+
+/*小卡片内信息*/
+.data{
+	margin-top: 20rpx;
+	margin-left: 20rpx;
+}
+.data_name{
+	color: #806f6a;
+	font-size: 40rpx;
+	font-weight: bold;
+}
+.other{
+	margin-top: 15rpx;
+}
+
+.other .zone,.other .now{
+	font-size: 30rpx;
+	letter-spacing: 5rpx;
+}

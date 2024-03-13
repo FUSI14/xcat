@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="title">
+	<view class="title_1">
+		<image src="http://81.71.66.85:9090/i/2024/02/01/ucpfou.png" class="title_img" mode=""/>
+	</view>
+	<view class="title_2">
+		<view bindtap="zoneevent" class="zone">
+			<image src="{{if_zone==true?zone_yes:zone_no}}"  class="zone_img" alt=""/>
+		</view>
+		<view bindtap="zoneevent_1" class="state">
+			<image src="{{if_zone==false?state_yes:state_no}}"  class="zone_img" alt=""/>
+		</view>
+		<view wx:if="{{if_zone==true}}">
+			<scroll-view scroll-x style="white-space:nowrap;display: flex;">
+				<view  style="display: inline-block;" wx:for="{{placeGroupList}}" wx:key="key" bindtap="switchTab" data-plaid="{{item.plaid}}" data-name="{{item.name}}">
+					<image src="{{selected_id === item.plaid ? item.yes : item.no}}" class="tiny_zone" mode=""/>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+</view>
+<view class="body">
+	<view style="color:#f0f0f0">111 </view>
+	<view wx:if="{{if_zone==true}}">
+		<view class="cat_small" wx:for="{{cat_data}}" wx:key="key" data-catid="{{item.catId}}" bindtap="cat_card" wx:if="{{item.location===selected_name}}">
+			<view class="photo">
+				<image src="{{item.pictures[0]}}" mode="aspectFill" class="photo_img"/>
+			</view>
+			<view class="data">
+				<view class="name" class="data_name">
+					{{item.nickname}}
+				</view>
+				<view class="other" style="color: #d0ba99;">
+					<view id="now" class="now">
+					{{item.status}}
+					</view>
+					<view id="zone" class="zone">
+					{{item.location}}
+					</view>
+				</view>
+			</view>
+		</view>
+		<view style="height: 30rpx;"></view>
+	</view>
+	<view wx:if="{{if_zone==false}}">
+		<scroll-view scroll-x style='white-space:nowrap;display: flex;' class=''>
+			<view style='width:200rpx;height: 200rpx;display: inline-block;background-color: red;'></view>
+			<view style='width:200rpx;height: 200rpx;display: inline-block;background-color: blue;'></view>
+			<view style='width:200rpx;height: 200rpx;display: inline-block;background-color: green;'></view>
+			<view style='width:200rpx;height: 200rpx;display: inline-block;background-color: orange;'></view>
+			<view style='width:200rpx;height: 200rpx;display: inline-block;background-color: yellow;'></view>
+			<view style='width:200rpx;height: 200rpx;display: inline-block;background-color: black;'></view>
+		</scroll-view>
+	</view>
+</view>

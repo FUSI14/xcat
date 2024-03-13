@@ -1,0 +1,37 @@
+<!--pages/kepu/kepu.wxml-->
+<view class="title">
+	<view class="title_1">
+		<image src="http://81.71.66.85:9090/i/2024/02/06/vo9qaz.png" class="title_img" mode=""/>
+	</view>
+	<view class="kepu">
+		<view wx:for="{{kepuGroupList}}" wx:key="key" bindtap="switchTab" data-kepuid="{{item.kepuid}}" >
+			<image src="{{selected_id === item.kepuid ? item.yes : item.no}}" class="{{selected_id === item.kepuid ? 'tiny_kepu_yes':'tiny_kepu_no'}}" mode=""/>
+		</view>
+	</view>
+	<view>
+		<image src="{{line_1}}" mode="" class="line"/>
+	</view>
+</view>
+<view class="body">
+	<!--wx:if显示哪一条,暂时无内容-->
+	<view class="notice">
+		<view style="color: #F0F0F0;">...111</view>
+		<view class="notice_img">
+			
+		</view>
+		<view>
+			{{selected_id}}
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+			<view>111</view>
+		</view>
+	</view>
+	<view style="height: 30rpx;"></view>
+</view>

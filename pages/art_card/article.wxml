@@ -1,0 +1,2 @@
+<!--pages/art_card/article.wxml-->
+<text>{{artid}}</text>

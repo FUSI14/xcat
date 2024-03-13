@@ -1,0 +1,53 @@
+{
+  "tabBar": {
+    "color": "#b58e8a",
+    "selectedColor": "#b58e8a",
+    "backgroundColor": "#f0f0f0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "icon/guide-no.png",
+        "selectedIconPath": "icon/guide-yes.png",
+        "text": "图鉴"
+      },
+      {
+        "pagePath": "pages/kepu/kepu",
+        "iconPath": "icon/kepu-no.png",
+        "selectedIconPath": "/icon/kepu-yes.png",
+        "text": "科普"
+      },
+      {
+        "pagePath": "pages/ground/ground",
+        "iconPath": "icon/ground-no.png",
+        "selectedIconPath": "icon/ground-yes.png",
+        "text": "咕噜广场"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "icon/my-no.png",
+        "selectedIconPath": "icon/my-yes.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/kepu/kepu",
+    "pages/logs/logs",
+    "pages/ground/ground",
+    "pages/my/my",
+    "pages/cat_card/index",
+    "pages/art_card/article",
+    "pages/upload_img/img"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

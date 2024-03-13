@@ -1,0 +1,50 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E6%B9%98%E5%A4%A7%E7%8C%AB%E5%9B%BD",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "上传图片",
+          "pathName": "pages/upload_img/img",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "咕噜广场",
+          "pathName": "pages/ground/ground",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "科普",
+          "pathName": "pages/kepu/kepu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "猫咪详细",
+          "pathName": "pages/cat_card/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "3.3.4"
+}

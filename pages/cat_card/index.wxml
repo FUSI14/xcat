@@ -1,0 +1,49 @@
+<!--pages/cat_card/index.wxml-->
+<view class="title">
+	<view>
+		<image src="http://81.71.66.85:9090/i/2024/02/05/weenq7.png" class="back" mode="" bindtap="backevent" />
+	</view>
+	<view class="title_1">
+		<image src="http://81.71.66.85:9090/i/2024/02/01/ucpfou.png" class="title_img" mode="" />
+	</view>
+</view>
+<view class="body">
+
+	<view class="card">
+		<view style="color: #F0F0F0;">...111</view>
+		<view>
+			<swiper class="card_img" autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}">
+				<swiper-item wx:for="{{cat_data.pictures}}" wx:key="photo_key">
+					<image src="{{item}}" class="card_img_tiny" mode="aspectFill" />
+				</swiper-item>
+			</swiper>
+		</view>
+		<view class="cat_data">
+			<view style="display: flex;justify-content: space-between;">
+				<view class="name">{{cat_data.nickname}}</view>
+				<view class="feedback">
+					<view class="feedback_font">反馈</view>
+				</view>
+			</view>
+			<view class="tiny_data">外形：<view style="color: #cfba99;">{{cat_data.shape}}</view>
+			</view>
+			<view class="tiny_data">性别：<view style="color: #cfba99;">{{cat_data.is_Male===true?"母":"公"}}</view>
+			</view>
+			<view class="tiny_data">状态：<view style="color: #cfba99;">{{cat_data.status}}</view>
+			</view>
+			<view class="tiny_data">性情：<view style="color: #cfba99;">{{cat_data.temperament}}</view>
+			</view>
+			<view class="tiny_data">常驻地：<view style="color: #cfba99;">{{cat_data.location}}</view>
+			</view>
+			<view class="tiny_data">名字来源：<view style="color: #cfba99;">{{cat_data.named}}</view>
+			</view>
+			<view style="color: #F0F0F0;">...111</view>
+		</view>
+	</view>
+	<view class="card">
+		
+	</view>
+
+</view>
+<view style="height: 10rpx;">
+</view>
